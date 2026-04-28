@@ -1,0 +1,24 @@
+/*  MEDIA / GALLERY*/
+.media {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.media__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.media__grid img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: filter var(--transition), transform var(--transition);
+  border: 1px solid var(--color-border);
+}
+
+.media__grid img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}

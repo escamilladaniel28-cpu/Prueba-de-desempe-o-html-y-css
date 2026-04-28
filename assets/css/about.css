@@ -1,0 +1,57 @@
+/* ABOUT*/
+.about {
+  background: var(--color-bg);
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about__img {
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+  filter: grayscale(30%);
+}
+
+.about__text p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.about__text h3 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.influences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.influences-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+.influences-list li::before {
+  content: '//';
+  color: var(--color-red);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+}

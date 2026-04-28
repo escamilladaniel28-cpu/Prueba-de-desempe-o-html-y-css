@@ -1,0 +1,46 @@
+/*HERO*/
+.hero {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to bottom, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.85) 100%),
+    url('../img/img-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero__overlay {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero__eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 1.5rem;
+}
+
+.hero__overlay h2 {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 15vw, 11rem);
+  line-height: 0.9;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.hero__sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-gray);
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.08em;
+}

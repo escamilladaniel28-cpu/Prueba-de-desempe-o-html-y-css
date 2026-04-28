@@ -1,0 +1,134 @@
+/* STYLE.CSS — Shattered Riffs Rock Band Landing Page*/
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+/*VARIABLES*/
+:root {
+  --color-bg:       #0a0a0a;
+  --color-surface:  #111111;
+  --color-card:     #1a1a1a;
+  --color-red:      #e63030;
+  --color-red-dark: #b71c1c;
+  --color-white:    #f0f0f0;
+  --color-gray:     #888888;
+  --color-border:   rgba(230, 48, 48, 0.2);
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body:    'Barlow', sans-serif;
+
+  --transition: 0.3s ease;
+}
+
+/*
+   RESET & BASE*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*HELPERS*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 6rem 2rem;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--color-white);
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.03em;
+}
+
+.section-title span {
+  color: var(--color-red);
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  background: var(--color-red);
+  margin-bottom: 3rem;
+}
+
+/*BUTTONS */
+.btn {
+  display: inline-block;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  padding: 0.85rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-red-dark);
+  transform: translateY(-2px);
+}
+
+.btn--small {
+  font-size: 0.85rem;
+  padding: 0.6rem 1.5rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+
+
+
+
+
+
